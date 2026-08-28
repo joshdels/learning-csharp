@@ -6,6 +6,8 @@ public class ParcelService
 {
     private readonly List<Parcel> _parcels = new();
 
+    public IReadOnlyList<Parcel> Parcels => _parcels;
+
     public void InputParcels()
     {
         Console.Write("Enter PIN: ");
@@ -31,7 +33,7 @@ public class ParcelService
 
         try
         {
-            var parcel = CreateParcel(
+            CreateParcel(
                 pin,
                 lotNumber,
                 owner,
