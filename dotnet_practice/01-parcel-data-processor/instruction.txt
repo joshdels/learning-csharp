@@ -1,0 +1,22 @@
+-------
+input
+PIN: 001-001
+Lot: 123
+Owner: Juan Dela Cruz
+Area: 500
+Barangay: Apokon
+
+
+----
+output
+PARCEL SUMMARY
+
+Total parcels: 10
+Total area: 8,450 sqm
+Largest parcel: 001-007
+Smallest parcel: 001-003
+
+Barangays:
+Apokon: 4
+Visayan Village: 3
+Magugpo: 3
