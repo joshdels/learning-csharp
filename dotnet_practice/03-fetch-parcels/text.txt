@@ -6,21 +6,6 @@ DTOs
 async/await
 HTTP status codes
 
------
-output
-Create a DTO:?
 
-Downloading parcels...
 
-Downloaded: 10,542 parcels
-
-PARCEL STATISTICS
-
-Total parcels: 10,542
-Total area: 5,842,120 sqm
-
-Barangays:
-Apokon             2,103
-Magugpo             1,832
-Visayan Village     1,540
-...
+GOAL is to fetch an api then async hehe

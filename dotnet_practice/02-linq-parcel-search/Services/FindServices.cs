@@ -11,16 +11,22 @@ public class FindService
     {
         List<Parcel> parcels = ParcelData.Parcels;
 
+        // query syntax
         var results =
             from parcel in parcels
             where parcel.Pin == pin
             select parcel;
 
+        // you can also write this one method syntax
+        var results_v2 = parcels
+            .Where(parcel => parcel.Pin == pin);
+            
+
         if (results.Any())
         {
             Console.WriteLine("Parcel Found");
 
-            foreach (var parcel in results)
+            foreach (var parcel in results_v2)
             {
                 Console.WriteLine($"PIN: {parcel.Pin}");
                 Console.WriteLine($"Owner: {parcel.Owner}");
