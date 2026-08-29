@@ -1,4 +1,5 @@
 ﻿using ParcelManager.Services;
+using AnalyzeParcels.Services;
 
 namespace ParcelManager;
 
@@ -30,10 +31,8 @@ public class Program
             }
         }
 
-        Console.WriteLine("\nReport Analysis");
+        var analyzeParcel = new AnalyzeService();
 
-        Console.WriteLine(
-            $"Total parcels: {parcelService.Parcels.Count}"
-        );
+        analyzeParcel.parcelsSummary(parcelService.Parcels);
     }
 }
